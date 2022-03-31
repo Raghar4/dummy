@@ -19,10 +19,16 @@
         <source src="drks2.mp3" type="audio/ogg">
         <source src="drks2.mp3" type="audio/mpeg">
     </audio> -->
-    <audio id="audioID" loop> <source src="drks2.mp3"  type="audio/mp3"></audio>
+<!--     <audio id="audioID" loop> <source src="drks2.mp3"  type="audio/mp3"></audio>
     <script>
         var myaudio = document.getElementById("audioID").autoplay = true;
-    </script>
+    </script> -->
+    <embed src="drks2.mp3" type="audio/mp3" autostart="true" hidden="true">
+    <audio id="player" autoplay controls>
+        <source
+            src="drks2.mp3"
+            type="audio/mp3">
+    </audio>
     
 </body>
 
