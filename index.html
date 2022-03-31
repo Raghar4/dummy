@@ -1,35 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<!--     <script>
-        window.onload = function() {
-        var context = new AudioContext();
-        } -->
-</script>
-</head>
+<html>
 
 <body>
-<!--     <audio controls allow="autoplay" loop="loop">
-        <source  src="drks2.mp3" type="audio/wav">
-        <source src="drks2.mp3" type="audio/ogg">
+
+    <audio id="myAudio" controls autoplay>
+        <source src="drks2.ogg" type="audio/ogg">
         <source src="drks2.mp3" type="audio/mpeg">
-    </audio> -->
-<!--     <audio id="audioID" loop> <source src="drks2.mp3"  type="audio/mp3"></audio>
-    <script>
-        var myaudio = document.getElementById("audioID").autoplay = true;
-    </script> -->
-    <embed src="drks2.mp3" type="audio/mp3" autostart="true" hidden="true">
-    <audio id="player" autoplay="true" controls>
-        <source
-            src="drks2.mp3"
-            type="audio/mp3">
+        Your browser does not support the audio element.
     </audio>
-    
+
+    <p>Click the button to find out if the audio automatically started to play as soon as it was ready.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myAudio").autoplay;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
 </body>
 
 </html>
