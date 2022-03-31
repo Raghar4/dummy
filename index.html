@@ -6,19 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
+<!--     <script>
         window.onload = function() {
         var context = new AudioContext();
-        }
+        } -->
 </script>
 </head>
 
 <body>
-    <audio controls allow="autoplay" loop="loop">
+<!--     <audio controls allow="autoplay" loop="loop">
         <source  src="drks2.mp3" type="audio/wav">
         <source src="drks2.mp3" type="audio/ogg">
         <source src="drks2.mp3" type="audio/mpeg">
-    </audio>
+    </audio> -->
+    <audio id="audioID" loop> <source src="path/audio.mp3"  type="audio/mp3"></audio>
+    <script>
+        var myaudio = document.getElementById("audioID").autoplay = true;
+    </script>
     
 </body>
 
