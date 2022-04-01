@@ -6,6 +6,14 @@
     <audio id="player" autoplay loop>
         <source src="drks2.mp3" type="audio/mp3">
     </audio>
+    <script>
+        document.addEventListener('click', musicPlay);
+
+        function musicPlay() {
+            document.getElementById('audio').play();
+            document.removeEventListener('click', musicPlay);
+        }
+    </script>
 </body>
 
 </html>
