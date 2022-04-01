@@ -2,7 +2,7 @@
 <html>
 
 <body>
-    <audio id="audio" controls="" style="width: 100%;">
+<!--     <audio id="audio" controls="" style="width: 100%;">
         <source src="drks2.mp3" type="audio/mpeg">Please update your browser does not support the audio element.
     </audio>
     <script type="text/javascript">
@@ -15,6 +15,12 @@
     </script>
     <script>
         autoplay();
+    </script> -->
+    <audio src="mysong.mp3" id="my_audio" loop="loop"></audio>
+    <script type="text/javascript">
+        window.onload=function(){
+            document.getElementById("my_audio").play();
+        }
     </script>
 
 </body>
